@@ -1,0 +1,20 @@
+
+<form action="/students" method="POST">
+  <label>Full name:</label>
+  <input name="full_name" type="text" placeholder=<%= @placeholder_name %>>
+  </input>
+
+  <label>Favorite Show:</label>
+  <input name="favorite_show" type="text" placeholder=<%= @placeholder_show %>>
+  </input>
+
+  <label>How Many Cheeseburgers can you eat?:</label>
+  <input name="number_cheeseburgers" type="text" placeholder=<%= @placeholder_cheeseburgers %>>
+  </input>
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <button type="submit">Create Student</button>
+</form>
+
+
+
+
